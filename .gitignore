@@ -1,0 +1,6 @@
+build.xml
+manifest.mf
+build-impl.xml
+*.properties
+project.xml
+private.xml
