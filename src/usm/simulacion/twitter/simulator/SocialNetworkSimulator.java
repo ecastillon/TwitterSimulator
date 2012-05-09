@@ -13,7 +13,7 @@ import usm.simulacion.twitter.core.TimeEvent;
  * tweet o re-tweet
  * @author camilovera
  */
-public class SocialNetworkSimulator {
+public class SocialNetworkSimulator implements NetworkConfigurator {
     
     private EventBus eventBus;
     
@@ -40,6 +40,21 @@ public class SocialNetworkSimulator {
      */
     public void onTimeEvent(long time){
         
+    }
+
+    @Override
+    public void addUser(User user) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void addFollower(User user, User folower) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void addFollowing(User user, User folowing) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
     
 }

@@ -3,6 +3,7 @@ package usm.simulacion.twitter;
 import usm.simulacion.twitter.core.EventBus;
 import usm.simulacion.twitter.core.LoopManager;
 import usm.simulacion.twitter.core.SimulationEvent;
+import usm.simulacion.twitter.simulator.NetworkConfigurator;
 import usm.simulacion.twitter.simulator.SocialEventsSimulator;
 import usm.simulacion.twitter.simulator.SocialNetworkSimulator;
 
@@ -19,7 +20,7 @@ public class MainSimulator {
         SocialNetworkSimulator networkSimulator = new SocialNetworkSimulator(bus);
         SocialEventsSimulator eventsSimulator = new SocialEventsSimulator(bus);
         //Configuración: leer datos de entrada y asignar parametros al simulador
-        
+        NetworkConfigurator ns = networkSimulator;
         
         //Fin configuración
         //inicio de simulación
