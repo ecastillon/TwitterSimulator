@@ -4,3 +4,4 @@ build-impl.xml
 *.properties
 project.xml
 private.xml
+/src/usm/twitter/nbproject/private/
